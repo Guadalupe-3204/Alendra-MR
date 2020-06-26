@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testimonial HTML</title>
+    <link rel="stylesheet" href="CSS/testimonialestilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <div class="testimonial-section">
+      <div class="inner-width">
+        <h1>Qué opinan las personas de esta página</h1>
+        <div class="testimonial-pics">
+          <img src="IMG/Bryan.jpg" alt="test-1" class="active">
+          
+          <img src="IMG/Michael.jpg" alt="test-3" class="active">
+        </div>
+
+        <div class="testimonial-contents">
+          <div class="testimonial active" id="test-1">
+            <p>"Excelente página web, muy fresca en estetica y en diseño interactivo, con una combinación de tonos rosados que le da un toque elegante y femenino"</p>
+            <span class="description">Bryan López / Estudiante</span>
+          </div>
+
+
+          <div class="testimonial" id="test-3">
+            <p>Pues me encanta su página web tienen todo los recursos está todo ordenado y la información es muy específica.</p>
+            <span class="description">Michael Lara / Estudiante</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+     <div class="sm">
+      <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/login?lang=es"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/?hl=es-419"><i class="fab fa-youtube"></i></a>
+      <a href="https://sv.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="indexcontacto.html" class="boton">Ir a contacto</a> 
+    </div>
+    
+
+    <script type="text/javascript">
+      $('.testimonial-pics img').click(function(){
+        $(".testimonial-pics img").removeClass("active");
+        $(this).addClass("active");
+
+        $(".testimonial").removeClass("active");
+        $("#"+$(this).attr("alt")).addClass("active");
+      });
+    </script>
+
+  </body>
+</html>

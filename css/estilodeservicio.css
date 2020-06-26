@@ -1,0 +1,55 @@
+/*Contenedor todo*/
+font-family: 'Libre Baskerville', serif;
+.container-all{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background:#ffffff;;
+    margin-top: 40px;
+    border-top: 6px solid rgba(191, 22, 68, 0.99);
+}
+/*Titulo*/
+.title{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color:rgba(191, 22, 68, 0.99);
+    text-align: center;
+}
+/*Subtitulo*/
+.sub-title{
+    font-size: 30px;
+    font-weight: 400;
+    color:#a70d48;
+}
+
+/*Contenedor imagen*/
+.container-all img{
+    width: 400px;
+    float: left;
+    margin-right: 20px;
+    height: 500px;
+
+}
+/*Contenedor de todo etiqueta p*/
+.container-all p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.container-all b{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+h3{
+    color:aliceblue;
+}
+
+.container .enlace a {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; /* La propiedad text-decoration permite que el texto sea decorado*/
+    color: #b21488;
+}
